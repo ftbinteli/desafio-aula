@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--adicione essa linha para aplicações web responsivas -->
+        <meta charset="UTF-8" /> <!--adicione essa linha para acentos aparecerem corretamente -->
+        <title>Mundado de Cenas</title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #inputOverlay {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 250px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+            }
+
+            input, button {
+                padding: 1px;
+                font-size: 20px;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+    </head>
+    <body>
+        
+        <div id="inputOverlay">
+            <div class="alinhartext">
+                <input type="text" id="nameInput" placeholder="Digite seu nome">
+            </div>
+            <div class="alinharbotao">
+                <button id="startButton">Confirma</button>
+            </div>
+        </div>
+
+        <script src="game.js"></script>
+        <script src="cenas/Cena01.js"></script>
+        <script src="cenas/Cena02.js"></script>
+        <script src="cenas/Cena03.js"></script>
+        
+        
+    </body>
+</html>
